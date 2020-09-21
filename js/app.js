@@ -1,4 +1,4 @@
-const apiKey = 'Replace with new API Key from newsAPI.org or use one shared';
+const apiKey = '35ba4a70f7fc4c839a4bba63bb224e2d';
 const defaultSource = ''; //default setting to search for all.
 const sourceSelector = document.querySelector('#news-keyword');
 const newsArticles = document.querySelector('#news-list');
@@ -31,7 +31,7 @@ async function updateNewsSources() {
 //When search terms/keywords are changed
 async function updateNews(source = defaultSource) {
     newsArticles.innerHTML = '';
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?q=${source}&sortBy=top&cgit &apiKey=${apiKey}`);
+    const response = await fetch(`https://newsapi.org/v2/top-headlines?q=${source}&sortBy=top&country=gb&apiKey=${apiKey}`);
     const json = await response.json();
     console.log('Articles fetched', json);
     newsArticles.innerHTML =
