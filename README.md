@@ -1,7 +1,7 @@
 Condenast assignment
 
 Tech used: javascript, HTML, CSS
-API: Newapi
+API: Newsapi.org
 Default Behaviour: It will list all the news fetched from NewsAPI for the country UK (country code:"gb").
 
 Search keyword: Search bar is placed at the top, any keywords can be search for the news fetched for UK.
